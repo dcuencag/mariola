@@ -64,34 +64,6 @@ body::after {
   background: radial-gradient(ellipse 120% 100% at 50% 50%, transparent 55%, rgba(5,4,3,.5) 100%);
 }
 
-/* ── Cursor ─────────────────────────────────────── */
-.cursor {
-  position: fixed; top: 0; left: 0;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: var(--gold);
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width .35s var(--ease-out), height .35s var(--ease-out), background .35s;
-  display: flex; align-items: center; justify-content: center;
-}
-.cursor__label {
-  font-family: var(--sans);
-  font-size: 11px; letter-spacing: .2em;
-  text-transform: uppercase;
-  color: var(--ink);
-  opacity: 0;
-  transition: opacity .25s;
-}
-.cursor.is-obra {
-  width: 72px; height: 72px;
-  background: rgba(201, 167, 90, .92);
-  backdrop-filter: blur(2px);
-}
-.cursor.is-obra .cursor__label { opacity: 1; }
-.cursor.is-link { width: 40px; height: 40px; background: rgba(201,167,90,.35); }
-@media (hover: none) { .cursor { display: none; } }
 
 /* ── Preloader ──────────────────────────────────── */
 .preloader {
@@ -345,7 +317,7 @@ body.is-loaded .reveal-line > span { transform: translateY(0); }
   flex-shrink: 0;
   display: flex; flex-direction: column;
   width: min(62vw, calc(68svh * var(--ratio, 1)));
-  cursor: none;
+  cursor: pointer;
 }
 .obra__frame {
   position: relative;

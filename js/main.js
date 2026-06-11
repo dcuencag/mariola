@@ -43,28 +43,6 @@ setTimeout(() => {
   }
 }, 5000);
 
-/* ── Cursor custom ─────────────────────────────── */
-if (!isTouch) {
-  const cursor = document.getElementById('cursor');
-  let cx = -100, cy = -100, tx = -100, ty = -100;
-
-  window.addEventListener('mousemove', (e) => { tx = e.clientX; ty = e.clientY; });
-
-  gsap.ticker.add(() => {
-    cx += (tx - cx) * 0.22;
-    cy += (ty - cy) * 0.22;
-    cursor.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
-  });
-
-  document.querySelectorAll('.obra').forEach((el) => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('is-obra'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('is-obra'));
-  });
-  document.querySelectorAll('a, button, .materia__item').forEach((el) => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('is-link'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('is-link'));
-  });
-}
 
 /* ── Nav hide on scroll down ───────────────────── */
 let lastY = 0;
