@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariola Naranjo — Pintora</title>
+<meta name="description" content="Mariola Naranjo, pintora. Emoción hecha pintura. Óleo, sal, arena, pan de oro. Colección Cádiz: Viento, Mar y Vino.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <div class="preloader__name" aria-hidden="true">
+      <span>M</span><span>A</span><span>R</span><span>I</span><span>O</span><span>L</span><span>A</span>
+      <span class="sp">&nbsp;</span>
+      <span>N</span><span>A</span><span>R</span><span>A</span><span>N</span><span>J</span><span>O</span>
+    </div>
+    <div class="preloader__line"><i></i></div>
+    <div class="preloader__tag">Emoción hecha pintura</div>
+  </div>
+</div>
+
+<!-- ══════════ CURSOR ══════════ -->
+<div class="cursor" id="cursor"><span class="cursor__label">ver</span></div>
+
+<!-- ══════════ GRAIN + VIGNETTE ══════════ -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#inicio">M<span>—</span>N</a>
+  <nav class="nav__links">
+    <a href="#coleccion">Colección</a>
+    <a href="#materia">Materia</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main id="smooth-content">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="inicio">
+  <div class="hero__bg">
+    <img src="assets/obras/arrecifes-zahora.jpg" alt="" aria-hidden="true">
+  </div>
+  <div class="hero__veil"></div>
+  <div class="hero__content">
+    <p class="hero__kicker reveal-line"><span>Pintora · Málaga, Andalucía</span></p>
+    <h1 class="hero__title">
+      <span class="hero__title-line"><i>Mariola</i></span>
+      <span class="hero__title-line hero__title-line--indent"><i>Naranjo</i></span>
+    </h1>
+    <p class="hero__sub reveal-line"><span><em>Emoción hecha pintura</em></span></p>
+  </div>
+  <div class="hero__foot">
+    <p class="hero__expo">Colección Cádiz — <em>Viento, Mar y Vino</em></p>
+    <div class="hero__scroll"><span></span></div>
+    <p class="hero__year">Jerez · 2024</p>
+  </div>
+</section>
+
+<!-- ══════════ MANIFIESTO ══════════ -->
+<section class="manifesto">
+  <div class="manifesto__inner">
+    <p class="manifesto__text split-lines">
+      Cuando pinto busco <em>emocionar</em> a quien se detenga ante mi pintura.
+      Sentir emoción nos recuerda que seguimos <em>vivos</em>.
+    </p>
+    <p class="manifesto__attr reveal-line"><span>— No es algo que hagas, es algo que eres.</span></p>
+  </div>
+</section>
+
+<!-- ══════════ COLECCIÓN — SALA HORIZONTAL ══════════ -->
+<section class="sala" id="coleccion">
+  <div class="sala__head">
+    <h2 class="sala__title"><em>La</em> Colección</h2>
+    <p class="sala__hint">Cádiz: Viento, Mar y Vino — quince obras</p>
+  </div>
+
+  <div class="sala__pin" id="salaPin">
+    <div class="sala__track" id="salaTrack">
+
+      <article class="obra" data-idx="1">
+        <figure class="obra__frame">
+          <img src="assets/obras/levante.jpg" alt="Levante — óleo y sal de las salinas del Puerto de Santa María" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">I</span>
+          <h3 class="obra__name">Levante</h3>
+          <p class="obra__tech">Óleo y sal de las salinas del Puerto de Santa María</p>
+          <p class="obra__dim">150 × 150 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="2">
+        <figure class="obra__frame">
+          <img src="assets/obras/poniente.jpg" alt="Poniente — óleo y sal de las salinas del Puerto de Santa María" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">II</span>
+          <h3 class="obra__name">Poniente</h3>
+          <p class="obra__tech">Óleo y sal de las salinas del Puerto de Santa María</p>
+          <p class="obra__dim">150 × 150 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="3">
+        <figure class="obra__frame">
+          <img src="assets/obras/atlantico.jpg" alt="Atlántico — óleo, tierra albariza y tinta china" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">III</span>
+          <h3 class="obra__name">Atlántico</h3>
+          <p class="obra__tech">Óleo, tierra albariza y tinta china</p>
+          <p class="obra__dim">120 × 120 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="4">
+        <figure class="obra__frame">
+          <img src="assets/obras/playa-puerto-santa-maria.jpg" alt="Playa del Puerto de Santa María — óleo y arena de playa" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">IV</span>
+          <h3 class="obra__name">Playa del Puerto de Santa María</h3>
+          <p class="obra__tech">Óleo y arena de playa del Puerto de Santa María</p>
+          <p class="obra__dim">120 × 120 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="5">
+        <figure class="obra__frame">
+          <img src="assets/obras/playas-zahara.jpg" alt="Playas de Zahara — óleo y arena de playa de Zahara de los Atunes" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">V</span>
+          <h3 class="obra__name">Playas de Zahara</h3>
+          <p class="obra__tech">Óleo y arena de playa de Zahara de los Atunes</p>
+          <p class="obra__dim">120 × 100 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="6">
+        <figure class="obra__frame">
+          <img src="assets/obras/playa-puerto-sm2.jpg" alt="Playa Puerto Santa María — óleo y arena de playa" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">VI</span>
+          <h3 class="obra__name">Playa Puerto Santa María</h3>
+          <p class="obra__tech">Óleo y arena de playa del Puerto de Santa María</p>
+          <p class="obra__dim">120 × 120 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="7">
+        <figure class="obra__frame">
+          <img src="assets/obras/chumbera.jpg" alt="Chumbera — óleo y tronco de chumbera seca" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">VII</span>
+          <h3 class="obra__name">Chumbera</h3>
+          <p class="obra__tech">Óleo y tronco de chumbera seca</p>
+          <p class="obra__dim">100 × 100 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="8">
+        <figure class="obra__frame">
+          <img src="assets/obras/venencia.jpg" alt="Venencia — óleo y pan de oro" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">VIII</span>
+          <h3 class="obra__name">Venencia</h3>
+          <p class="obra__tech">Óleo y pan de oro</p>
+          <p class="obra__dim">120 × 100 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="9">
+        <figure class="obra__frame">
+          <img src="assets/obras/vara-pulgar.jpg" alt="Vara y Pulgar — óleo y tierra albariza de viñedo" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">IX</span>
+          <h3 class="obra__name">Vara y Pulgar</h3>
+          <p class="obra__tech">Óleo y tierra albariza de viñedo</p>
+          <p class="obra__dim">120 × 120 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="10">
+        <figure class="obra__frame">
+          <img src="assets/obras/velo-flor.jpg" alt="Velo de Flor — óleo, albero de suelo de bodega y pan de oro" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">X</span>
+          <h3 class="obra__name">Velo de Flor</h3>
+          <p class="obra__tech">Óleo, albero de suelo de bodega y pan de oro</p>
+          <p class="obra__dim">120 × 120 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="11">
+        <figure class="obra__frame">
+          <img src="assets/obras/vors.jpg" alt="VORS — óleo, pan de oro y vino oloroso" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">XI</span>
+          <h3 class="obra__name">VORS</h3>
+          <p class="obra__tech">Óleo, pan de oro y vino oloroso</p>
+          <p class="obra__dim">120 × 120 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="12">
+        <figure class="obra__frame">
+          <img src="assets/obras/salinas.jpg" alt="Salinas del Puerto de Sta María — óleo y sal gruesa de las salinas" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">XII</span>
+          <h3 class="obra__name">Salinas del Puerto de Sta&nbsp;María</h3>
+          <p class="obra__tech">Óleo y sal gruesa de las salinas del Puerto de Santa María</p>
+          <p class="obra__dim">120 × 100 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="13">
+        <figure class="obra__frame">
+          <img src="assets/obras/homenaje-tabanco.jpg" alt="Homenaje al Tabanco — óleo y tinta china" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">XIII</span>
+          <h3 class="obra__name">Homenaje al Tabanco</h3>
+          <p class="obra__tech">Óleo y tinta china</p>
+          <p class="obra__dim">120 × 100 cm</p>
+        </div>
+      </article>
+
+      <article class="obra" data-idx="14">
+        <figure class="obra__frame">
+          <img src="assets/obras/tintilla-rota.jpg" alt="Tintilla de Rota — óleo" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">XIV</span>
+          <h3 class="obra__name">Tintilla de Rota</h3>
+          <p class="obra__tech">Óleo</p>
+          <p class="obra__dim">160 × 80 cm</p>
+        </div>
+      </article>
+
+      <article class="obra obra--wide" data-idx="15">
+        <figure class="obra__frame">
+          <img src="assets/obras/arrecifes-zahora.jpg" alt="Arrecifes de Zahora — óleo y arenas de varias playas de Cádiz" loading="lazy">
+        </figure>
+        <div class="obra__label">
+          <span class="obra__num">XV</span>
+          <h3 class="obra__name">Arrecifes de Zahora</h3>
+          <p class="obra__tech">Óleo y arenas de varias playas de Cádiz</p>
+          <p class="obra__dim">220 × 140 cm</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="sala__progress">
+      <span class="sala__counter" id="salaCounter">01 / 15</span>
+      <div class="sala__bar"><i id="salaBar"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MATERIA ══════════ -->
+<section class="materia" id="materia">
+  <div class="materia__head">
+    <h2 class="materia__title">La <em>materia</em> del sur</h2>
+    <p class="materia__sub">Cada obra lleva dentro el lugar que la inspiró</p>
+  </div>
+  <ul class="materia__list">
+    <li class="materia__item" data-img="assets/obras/levante.jpg">
+      <span class="materia__name">Sal de las salinas</span>
+      <span class="materia__src">Puerto de Santa María</span>
+    </li>
+    <li class="materia__item" data-img="assets/obras/playas-zahara.jpg">
+      <span class="materia__name">Arena de playa</span>
+      <span class="materia__src">Zahara de los Atunes</span>
+    </li>
+    <li class="materia__item" data-img="assets/obras/velo-flor.jpg">
+      <span class="materia__name">Pan de oro</span>
+      <span class="materia__src">Albero de suelo de bodega</span>
+    </li>
+    <li class="materia__item" data-img="assets/obras/vors.jpg">
+      <span class="materia__name">Vino oloroso</span>
+      <span class="materia__src">Bodegas de Jerez</span>
+    </li>
+    <li class="materia__item" data-img="assets/obras/vara-pulgar.jpg">
+      <span class="materia__name">Tierra albariza</span>
+      <span class="materia__src">Viñedos del Marco</span>
+    </li>
+    <li class="materia__item" data-img="assets/obras/chumbera.jpg">
+      <span class="materia__name">Tronco de chumbera</span>
+      <span class="materia__src">Campo andaluz</span>
+    </li>
+  </ul>
+  <div class="materia__preview" id="materiaPreview"><img src="" alt=""></div>
+</section>
+
+<!-- ══════════ SOBRE MÍ ══════════ -->
+<section class="bio" id="sobre-mi">
+  <div class="bio__grid">
+    <figure class="bio__portrait">
+      <div class="bio__portrait-mask">
+        <img src="assets/artista/mariola-perfil.jpg" alt="Mariola Naranjo pintando en su estudio">
+      </div>
+      <figcaption>Mariola Naranjo</figcaption>
+    </figure>
+    <div class="bio__text">
+      <h2 class="bio__title">Soy una artista <em>española</em></h2>
+      <p>Nací en el sur, en Málaga, Andalucía. Una ciudad de luz y color. Azules cielo y mar, atardeceres rojos, de un sol amarillo naranja, brillante… los mismos colores que he traído años después a mis cuadros, creados con óleo, aceites de lino y adormidera, arena y sal.</p>
+      <p>Pinto desde 2010, después de hacer en mi vida muchas cosas. Ahora, cuando miro atrás, entiendo que eran necesarias para encontrar lo que realmente había venido a ser.</p>
+      <p>¿Por qué pinto? Porque una vez que lo has encontrado dentro de ti, ya no puedes no pintar. <em>No es algo que hagas, es algo que eres.</em></p>
+      <p>A veces, la vida nos rompe por dentro, y precisamente esa grieta puede ser una oportunidad para dejar entrar luz en nuestra vida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXPOSICIÓN ══════════ -->
+<section class="expo">
+  <div class="expo__inner">
+    <p class="expo__kicker">Exposición de pintura</p>
+    <h2 class="expo__title">Cádiz: <em>Viento,</em><br><em>Mar y Vino</em></h2>
+    <div class="expo__meta">
+      <div class="expo__meta-item">
+        <span class="expo__meta-label">Sala</span>
+        <span class="expo__meta-value">Sala De Profundis<br>Claustros de Santo Domingo</span>
+      </div>
+      <div class="expo__meta-item">
+        <span class="expo__meta-label">Fechas</span>
+        <span class="expo__meta-value">30 de agosto —<br>28 de septiembre</span>
+      </div>
+      <div class="expo__meta-item">
+        <span class="expo__meta-label">Lugar</span>
+        <span class="expo__meta-value">Jerez<br>2024</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACTO ══════════ -->
+<section class="contacto" id="contacto">
+  <p class="contacto__kicker">¿Hablamos?</p>
+  <a class="contacto__mail" href="mailto:mariolanaranjos@gmail.com">
+    <span>mariolanaranjos</span><span class="contacto__at">@</span><span>gmail.com</span>
+  </a>
+  <div class="contacto__links">
+    <a href="https://www.instagram.com/mariolanaranjopintura/" target="_blank" rel="noopener">Instagram</a>
+    <span>·</span>
+    <a href="https://www.linkedin.com/in/mariola-naranjopintura/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <p class="contacto__addr">Calle Valtravieso 12, Aravaca · Madrid</p>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <img class="footer__firma" src="assets/artista/mariola-retrato.jpg" alt="Firma de Naranjo sobre lienzo" loading="lazy">
+  <p class="footer__copy">© 2026 — Emoción hecha pintura</p>
+</footer>
+
+</main>
+
+<!-- ══════════ LIGHTBOX ══════════ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">×</button>
+  <figure class="lightbox__fig">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCap"></figcaption>
+  </figure>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
